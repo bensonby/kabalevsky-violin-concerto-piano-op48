@@ -293,28 +293,197 @@ upper-twenty = \relative c'' {
   ees-. d8( ees f fis g4--)
 }
 
-upper-twentyone = \relative c {
+upper-twentyone = \relative c'' {
   r4 r
+  e4( dis8 e bes4~ bes) cis-. dis-.
+  e4( g) fis-. <e e'>4( dis'8 e bes4~ bes) c-. cis-.
+  dis4-. e-. fis-.
 }
-upper-twentytwo = \relative c { }
-upper-twentythree = \relative c { }
-upper-twentyfour = \relative c { }
-upper-twentyfive = \relative c { }
-upper-twentysix = \relative c { }
-upper-twentyseven = \relative c { }
-upper-twentyeight = \relative c { }
-upper-twentynine = \relative c { }
-upper-thirty = \relative c { }
-upper-thirtyone = \relative c { }
-upper-thirtytwo = \relative c { }
-upper-thirtythree = \relative c { }
-upper-thirtyfour = \relative c { }
-upper-thirtyfive = \relative c { }
-upper-thirtysix = \relative c { }
-upper-thirtyseven = \relative c { }
-upper-thirtyeight = \relative c { }
-upper-thirtynine = \relative c { }
-upper-forty = \relative c { }
+upper-twentytwo = \relative c''' {
+  <g g'>8-> r e,8( dis e cis
+  fis4) fis8\( e fis dis e dis e cis dis e fis e fis dis e fis
+  g4\) g8( fis g e a4)
+  a8\( g a fis g fis g e fis g a g a fis g a b\) r
+  b8( ais b g c) r c( b c a cis) r
+  cis8( bis cis ais d) r d( cis d b ees) r r4 r4
+  R2.
+}
+upper-twentythree = \relative c' {
+  <aes des aes'>8-> r des4-- ees--
+  f2-- bes4-- aes2.~-- aes2 f4--
+  ges2-- f4-- ees2-- des4--
+  <c a f>4-> \breathe f4-- g-- a2-- d4--
+  c2.~-- c2 a4-- bes2-- a4-- g2-- f4--
+}
+upper-twentyfour = \relative c' {
+  <d fis a>4-> \breathe d4-- e--
+  fis2-- a4-- d2.(-> a2.)
+  <b, d>8-> r d4-- e-- fis-- b-- cis--
+  d2.->( b2.) fis'2.->( b,2.)
+}
+upper-twentyfive = \relative c'' {
+  \repeat unfold 2 {
+    <b e g>4-> q8( fis q fis)
+  }
+  q4-> r r R2.
+  \repeat unfold 2 {
+    <bes ees g>4-> q8( fis q fis)
+  }
+  q4-> r r R2.
+}
+upper-twentysix = \relative c'' {
+  \repeat unfold 2 {
+    <b e g>4-> fis g
+    <bes ees g>4-> fis g
+  }
+  <g b f' g>4-> r r R2.*5
+}
+upper-twentyseven = \relative c' {
+  <c e c'>4-> b'8( c)
+  << { g4~ g a b } \\ { s4 <f d>4 r r } >>
+  <c e c'>4 b'8( c)
+  << { \stemNeutral d4~ \stemUp d c d } \\ { s4 <d, f> r r } >>
+  << {
+    ees'4 ees8( d c d e2) c4 ees ees8( d c d e2) c4
+    ees8( d c d ees f \stemNeutral <fis a,>4)
+  } \\ {
+    aes,2.->( g4) e8( f g4) aes2.->( g4) e8( f g4) aes2.
+  } >>
+  \makeOctaves 1 { g4 gis a ais b }
+}
+upper-twentyeight = \relative c'' {
+  \makeOctaves 1 { c2.~-> c4 b a }
+  <g g'>8( e' c e g gis
+  <a a,>4) e <c c'>
+  << { d2.-> } \\ { r4 <a d,> q } >>
+  f'4-> f8( e d a) f'4 f8( e d a)
+  g'8( f e d c b c4)-> g e c g r
+}
+upper-twentynine = \relative c' {
+  <g c g'>4-. r r
+  <g d' g>4-. r r
+  <g ees' g>4-. r r
+  <g f' g>4-. r r
+  <aes ees' aes>4-. r r
+  \repeat unfold 3 { <e' a c>-. }
+  \repeat unfold 3 { <f a c>-. }
+  \repeat unfold 3 { <fis a c>-. }
+  g4-- g8( f ees f ges2 bes4)
+  g4-- g8( f ees f ges4)
+  aes4-. bes-. c-. d-. ees-. e-. f-. fis-.
+}
+upper-thirty = \relative c'' {
+  <bes ees g>4 s2
+  \repeat unfold 6 { <ees, g bes>4-. }
+  \repeat unfold 3 { <ees g c>4 }
+  \repeat unfold 3 { <ees f c'>4 }
+  <ees aes c>4-- r r
+  <ees aes c>4-- r r
+  <d g bes>4-- r r
+  ees'4-> bes-> g-> ees-> f-> fis->
+  << { g4-> r f-> ees-> r d-> } \\ { <g, g'>2.~ q2. } >>
+}
+upper-thirtyone = \relative c' {
+  \key c \minor
+  <c ees g>4
+  <ees g>8( <d fis> <ees g> <d fis> <ees g>4)->
+  <ees g>8( <d fis> <ees g> <d fis> <ees g>4)
+  <d fis>4 <ees g> <d fis> <ees g> <d fis>
+  <ees g>4 r r r c( d ees c aes' g c2)
+  r4 r ees,4( f2 ees4~ ees d c ees2.)
+}
+upper-thirtytwo = \relative c' {
+  <c ees g>4->
+  <ees g>8( <d fis> <ees g> <d fis> <ees g>4)
+  <d fis>4 <ees g> <d fis>( <ees g>) r
+  r4 c( d ees c aes' g2 c4 aes2.~ aes4)
+  g4( f g2 d'4 <ees, g c>4->)
+  \repeat unfold 2 { <d ees g>8( c) }
+  q4->
+  \repeat unfold 2 { <d ees g>8( c) }
+}
+upper-thirtythree = \relative c' {
+  <ees aes>4->
+  \repeat unfold 3 { aes8( ees aes c ees) r }
+  aes,8( ees aes c des) r
+  aes8( e aes c des) r
+  aes8( e aes bes c) r
+  \repeat unfold 3 { f,8( c f aes c) r }
+}
+upper-thirtyfour = \relative c' {
+  f8( c f aes bes) r
+  \repeat unfold 2 { f8( d f bes d) r }
+  f,8( d f bes des) r
+  f,8( des f bes c) r
+  aes8( f aes c f) r
+  c8( aes c f aes) r c4( f,)
+  <c, ees c'>4-> ees8( c ees c)
+  <c ees bes'>4-> ees8( c ees c)
+  <c ees aes>4-> ees8( c ees c)
+  <c ees ges>4-> ees8( c ees c)
+}
+upper-thirtyfive = \relative c' {
+  <a c f>4->^"Piu mosso"
+  <a c>8( <gis b> <a c> <gis b> <a c>4)
+  <a c>8( <gis b> <a c> <gis b> <a c>4)
+  <gis b>4 <a c> <gis b> <a c> <gis b>
+  << {
+    f'2.~ f~ f~ f
+    f2.~ f~ f~ f
+  } \\ {
+    <f, aes c>4-. r r
+    <f aes des>4-. r r
+    <f aes d>4-. r r
+    <f aes des>4-. r r
+    <f aes c>4-. r r
+    <f aes des>4-. r r
+    <f aes d>4-. r r
+    <f a c>4-. r r
+  } >>
+}
+upper-thirtysix = \relative c' {
+  <d aes'>4-. r <d aes' bes>-.
+  <d aes' b>4-. r <d aes' bes>-.
+  <d aes' b>4-. r <d aes' cis>-.
+  <d aes' d>4-. r <d aes' b>-.
+  <f b>4-. r <f b cis>-.
+  <f b d>4-. r <f b cis>-.
+  <f b d>4-. r <f b e>-.
+  <f b f'>4-. r <f b d>-.
+  <aes d f>4-. r <aes d g>-.
+  <aes d aes'>4-. r <aes d f>-.
+}
+upper-thirtyseven = \relative c'' {
+  <aes d aes'>4-. r <aes d f>-.
+  <aes d aes'>4-. r <aes d f>-.
+  <a d a'>4-. <a d f>-. <bes d bes'>-.
+  \repeat unfold 4 { <b e b'>4 r r }
+}
+upper-thirtyeight = \relative c'' {
+  \key c \major
+  <c e g c>4-> b8( c b c)
+  <c e g c>4-> b8( c b c)
+  q4-> r r R2.
+  <c e a c>4-> b8( c b c)
+  <c e a c>4-> b8( c b c)
+  q4-> r r R2.
+}
+upper-thirtynine = \relative c'' {
+  <c ees aes c>4-> b c
+  <c ees aes c>4-> b c
+  <c fis a c>4-> b c
+  <c fis a c>4-> b c
+  <c f aes c>4-> b c
+  <c f aes c>4-> b c
+  <c e g c>4-> r r R2.
+}
+upper-forty = \relative c'' {
+  <c e g c>4-> r r R2.
+  c,4-> e-> g-> c-> e-> g->
+  <c, c'>4-> r r
+  <c e c'>4-> r r
+  c,4-> r r R2.
+}
 
 lower-one = \relative c, {
   <c g' e'>4-. r r
