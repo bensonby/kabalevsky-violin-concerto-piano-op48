@@ -1,6 +1,6 @@
 \version "2.18.2"
 \include "articulate.ly"
-#(set-global-staff-size 15)
+#(set-global-staff-size 14)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  http://lsr.di.unimi.it/LSR/Item?id=445
@@ -727,24 +727,157 @@ lower-twentytwo = \relative c {
   <fis' ees'>8 r r4 r4
   R2.
 }
-lower-twentythree = \relative c { }
-lower-twentyfour = \relative c { }
-lower-twentyfive = \relative c { }
-lower-twentysix = \relative c { }
-lower-twentyseven = \relative c { }
-lower-twentyeight = \relative c { }
-lower-twentynine = \relative c { }
-lower-thirty = \relative c { }
-lower-thirtyone = \relative c { }
-lower-thirtytwo = \relative c { }
-lower-thirtythree = \relative c { }
-lower-thirtyfour = \relative c { }
-lower-thirtyfive = \relative c { }
-lower-thirtysix = \relative c { }
-lower-thirtyseven = \relative c { }
-lower-thirtyeight = \relative c { }
-lower-thirtynine = \relative c { }
-lower-forty = \relative c { }
+lower-twentythree = \relative c, {
+  f8->( des' aes' des, aes' des,)
+  \repeat unfold 5 {
+    f,8( des' aes' des, aes' des,)
+  }
+  <ees ees,>4-> a8( f a f)
+  \repeat unfold 5 { ees8( f a f a f) }
+}
+lower-twentyfour = \relative c {
+  <bes bes,>4-> a'8( fis a fis)
+  \repeat unfold 3 { bes,8( fis' a fis a fis) }
+  \repeat unfold 4 { a,8( fis' b fis b fis) }
+  \repeat unfold 2 { aes,8( fis' dis' fis, dis' fis,) }
+}
+lower-twentyfive = \relative c {
+  <g e' b'>4-> r r q-> r r q-> r r R2.
+  <g ees' bes'>4-> r r q-> r r q-> r r R2.
+}
+lower-twentysix = \relative c {
+  <g e' b'>4-> r r <g ees' bes'>-> r r
+  <g e' b'>4-> r r <g ees' bes'>-> r r
+  <g f' b>4-> r r R2.*5
+}
+lower-twentyseven = \relative c {
+  <g c,>4-> <g e'> q
+  <g c,>4-> <g f'> q
+  <g c,>4-> <g e'> q
+  <g c,>4-> <g f'> q
+  <aes ees'>4 c, c
+  <g' e'> c, c
+  <aes' ees'>4 c, c
+  <g' e'> c, c
+  <aes' ees'>4 c, c
+  <c a' fis'>4 <c'' d fis> q q q q
+}
+lower-twentyeight = \relative c' {
+  << {
+    \repeat unfold 9 { <e g>4 }
+    \repeat unfold 3 { <a, e'>4 }
+  } \\ {
+    c2.-> g-> e-> c->
+  } >>
+  f,2.->
+  <f' a d>4-> d g,
+  <f' a d>4-> d g,
+  <g' b e>4 g g,
+  <e' g c>4-> g e c g e
+}
+lower-twentynine = \relative c, {
+  <c g' ees'>4-. r r
+  <c g' f'>4-. r r
+  <c g' ees'>4-. r r
+  <c g' d'>4-. r r
+  <c g' ees'>4-. r r
+  c''8( b a b c4)
+  <c,, a' f'>4-. r r c''8( b a b c d
+  <bes ees>4 ees,) ees
+  <ces' ees>4( ees,) ees
+  <bes' ees>4( ees,) ees
+  <ces' ees>4( ees,) ees
+  \clef treble
+  \repeat unfold 6 { <ees' f a>4-. }
+}
+lower-thirty = \relative c'' {
+  << {
+    g4 \cr <g bes>4-. q-.
+  } \\ {
+    \cl ees2.-.
+  } >>
+  \clef bass
+  bes2.-. g-. ees-. aes,-.
+  r4 <f' c'>4-. bes,-.
+  r4 <f' c'>4-. bes,-.
+  r4 <g' bes>4-. bes,-.
+  ees4-> bes-> g-> ees-> f-> fis->
+  g4-> r f-> ees-> r d->
+}
+lower-thirtyone = \relative c {
+  \key c \minor
+  <g c,>4->
+  g8( aes g aes <g c,>4)->
+  g8( aes g aes <g c,>4)
+  aes4 q aes q aes q
+  \repeat unfold 4 { g'8( aes g aes c,4) }
+  \repeat unfold 3 { fis8( aes fis aes c,4) }
+  fis8( aes fis aes)
+}
+lower-thirtytwo = \relative c {
+  <g c,>4->
+  g8( aes g aes <g c,>4)
+  aes4 q aes( q) r4
+  c4 \repeat unfold 2 { g'8( aes g aes c,4) }
+  \repeat unfold 2 { g'8( aes g aes b,4) }
+  g'8( aes g aes bes,4)
+  g'8( aes g aes)
+  \repeat unfold 2 { <a,, a'>4-> a8( a') a,( a') }
+}
+lower-thirtythree = \relative c {
+  <aes aes,>4->
+  \repeat unfold 3 { aes4-.( ees' c'-.) }
+  aes,4-.( ees'-. <e des'>-.)
+  aes,4-.( e'-. des'-.)
+  aes,4-.( e'-. <f c'>-.)
+  \repeat unfold 3 { aes,4-.( f' c'-.) }
+}
+lower-thirtyfour = \relative c {
+  aes4-.( f'-. d'-.)
+  aes,4-.( f'-. bes-.)
+  aes,4-.( f'-. bes-.)
+  aes,4-.( f'-. des'-.)
+  aes,4-.( f'-. c'-.)
+  aes,-.( f'-.)
+  g,4-> c'4( f,) f,-> c''( f,)
+  \repeat unfold 4 {
+    <ges bes, ees,>4-> ges8( bes ges bes)
+  }
+}
+lower-thirtyfive = \relative c {
+  <c f,>4->
+  \repeat unfold 2 { f8( e f e <f f,>4) }
+  e4 q e q e
+  \repeat unfold 8 { r4 f,-. f,-. }
+}
+lower-thirtysix = \relative c, {
+  f4-. aes'-. r e,-. aes'-. r
+  f,4-. aes'-. r e,-. aes'-. r
+  aes,4-. b'-. r g,-. b'-. r
+  aes,4-. b'-. r g,-. b'-. r
+  b,4-. d'-. r bes,-. d'-. r
+}
+lower-thirtyseven = \relative c {
+  b4-. d'-. r bes,-. d'-. r
+  a,4-. f''-. aes,,
+  \repeat unfold 4 { <g e' b'>4 r r }
+}
+lower-thirtyeight = \relative c, {
+  \key c \major
+  \repeat unfold 3 { <c g' e'>4-> r r } R2.
+  \repeat unfold 3 { <c a' e'>4-> r r } R2.
+}
+lower-thirtynine = \relative c, {
+  <ees bes' fis'>4-> r r q r r
+  <d a' fis'>4-> r r q r r
+  <des aes' f'>4-> r r q r r
+  <c g' e'>4-> r r R2.
+}
+lower-forty = \relative c, {
+  <c g' e'>4-> r r R2.
+  c''4-> g-> e-> c-> g-> e->
+  <c c'>4-> r r <c'' e g>-> r r <c,, c'>4-> r r R2.
+}
 
 dynamics-one = {
   s2.\mf s2.*10
@@ -812,29 +945,70 @@ dynamics-twentyone = {
 dynamics-twentytwo = {
   s4\f s2\pp
 }
-dynamics-twentythree = { }
-dynamics-twentyfour = { }
-dynamics-twentyfive = { }
-dynamics-twentysix = { }
-dynamics-twentyseven = { }
-dynamics-twentyeight = { }
-dynamics-twentynine = { }
-dynamics-thirty = { }
-dynamics-thirtyone = { }
-dynamics-thirtytwo = { }
-dynamics-thirtythree = { }
-dynamics-thirtyfour = { }
-dynamics-thirtyfive = { }
-dynamics-thirtysix = { }
-dynamics-thirtyseven = { }
-dynamics-thirtyeight = { }
-dynamics-thirtynine = { }
-dynamics-forty = { }
+dynamics-twentythree = {
+  s4\f s2_"marcato" s2.*11
+}
+dynamics-twentyfour = {
+  s2.*10
+}
+dynamics-twentyfive = {
+  s2.\f s2.*7
+}
+dynamics-twentysix = {
+  s2.*4 s2.\sf s2.*5
+}
+dynamics-twentyseven = {
+  s2.\ff_"con fuoco" s2.*10
+}
+dynamics-twentyeight = {
+  s2.*8 s4 s2\> s2 s4\!
+}
+dynamics-twentynine = {
+  s2.\pp_"pizz." s2.*12 s2._"poco a poco cresc."
+}
+dynamics-thirty = {
+  s2.*6 s2.\< s2 s4\! s2.\f s2.*3
+}
+dynamics-thirtyone = {
+  s2.\f s2.*3
+  s2.\mf
+  s2.*7
+}
+dynamics-thirtytwo = {
+  s2.\f s2.*2 s2.\mf s2.*3
+  s2 s4\< s2 s4\!
+  s2.\f s2.
+}
+dynamics-thirtythree = {
+  s2.*8
+}
+dynamics-thirtyfour = {
+  s2.*13
+}
+dynamics-thirtyfive = {
+  s2. s2._"dim." s4 s2\> s2 s4\!
+  s2.\pp_"sotto voce" s2.*7
+}
+dynamics-thirtysix = {
+  s2.*3 s2._"poco a poco cresc." s2.*6
+}
+dynamics-thirtyseven = {
+  s2.*2 s2\< s4\! \repeat unfold 4 { s2.\sf }
+}
+dynamics-thirtyeight = {
+  s2.\ff s2.\sf s2.\sf s2.
+  \repeat unfold 3 { s2.\sf }
+}
+dynamics-thirtynine = {
+  s2.\p_"e cresc." s2.*5 s2.\ff
+}
+dynamics-forty = {
+  s2.\sf s2.*4 s2.\sf s2.\sf s2.
+}
 
 upper = \relative c' {
   \clef treble
-  \tempo "Allegro molto e con brio" 2. = 90
-  % \tempo "Allegro molto e con brio" 2. = 112
+  \tempo "Allegro molto e con brio" 2. = 112
   \time 3/4
   \key c \major
   \upper-prelude
@@ -1145,42 +1319,142 @@ violin-twentyone = \relative c' {
   <g e'>2.\f
 }
 violin-twentytwo = \relative c'' {
+  g4\pp g8( fis g e)
+  a4 a8( g a fis)
+  g8( fis) g( e) fis( g)
+  a8( g) a( fis) g( a)
+  b4 b8( a b g)
+  c4 c8( b c a)
+  b8( a) b( g) a( b)
+  c8( b) c( a) b( c)
+  d8 r d( cis d b)
+  ees8 r ees( d ees c)
+  e8 r e( dis e cis)
+  f8 r f8( e f d)
+  fis8 r gis,,\< a c ees fis a c ees fis g\!
 }
-violin-twentythree = \relative c'' {
+violin-twentythree = \relative c''' {
+  aes2.~\f\startTrillSpan aes2.~ aes4\stopTrillSpan
+  f4( fis) g( bes aes)
+  aes,4 bes8( c des ees) f4( ges aes)
+  a2.~\startTrillSpan a2.~ a4\stopTrillSpan
+  a4( bes) b( d c)
+  c,4 d8( e f g) a4( bes c)
 }
-violin-twentyfour = \relative c'' {
+violin-twentyfour = \relative c''' {
+  d2.~\startTrillSpan d2.~ d4\stopTrillSpan
+  d,4( e) fis( a) e'
+  d2.~\startTrillSpan d2.~ d4\stopTrillSpan
+  fis,4 b cis d e
+  fis2.~\startTrillSpan fis2.
 }
-violin-twentyfive = \relative c'' {
+violin-twentyfive = \relative c'''' {
+  g8->\stopTrillSpan r8 b,,,8 b <g e'> q
+  <b g'> q <e b'> q <g e'> q
+  g'8-> e b g e b g( b) e g b e
+  g8-> r bes,, bes <g ees'> q <bes g'> q <ees bes'> q <g ees'> q
+  g'8-> ees bes g ees bes g bes ees g bes ees
 }
 violin-twentysix = \relative c'' {
+  \repeat unfold 2 {
+    <b g'>8-> <e, b'> q <g, e'> <e' b'> <b' g'>
+    <bes g'>8-> <ees, bes'>8 q <g, ees'> <ees' bes'> <bes' g'>
+  }
+  <g, d' b' g'>8-> r g8_"energico" a b c
+  d cis d e f fis g fis g a b c
+  d cis\< d e f fis g g
+  fis-> fis g-> g a-> a ais-> ais b-> b\!
 }
 violin-twentyseven = \relative c'' {
+  <e c'>8->\sff r r4 r4 R2.*10
 }
 violin-twentyeight = \relative c'' {
+  R2.*10
 }
 violin-twentynine = \relative c'' {
+  c4\p b8( c) g4~ g a-.( b-.)
+  c4 b8( c) d4~ d c-.( d-.)
+  ees4 ees8( d c d) e2( c4)
+  f4 f8( e d e) fis2( d4) g2.
+  ges4 ges8( f ees f) g2.
+  ges8( f ees f ges aes)
+  a4( bes) b( c)_"poco a poco cresc." cis-.( d-.)
 }
-violin-thirty = \relative c'' {
+violin-thirty = \relative c''' {
+  ees2.~ ees4 d-.( c-.)
+  bes8( g ees g bes b) c4(\( g) ees'-.\) f,2.--
+  aes4-> aes8( g f c)
+  aes'4->\< aes8( g f c)
+  bes'8( aes g f ees d)\!
+  ees4-> r r R2.*3
 }
 violin-thirtyone = \relative c'' {
+  \key c \minor
+  R2.*4
+  r4 c4\f( d ees2 aes4) g2.~( g2 ees4--)
+  f2( ees4 d2 c4) ees2.( c4) r r
 }
 violin-thirtytwo = \relative c'' {
+  R2.*2 r4 c4( d ees c aes')
+  g2.~( g2 ees4--) f2( aes4 g2.) c2.
+  R2.*2
 }
-violin-thirtythree = \relative c'' {
+violin-thirtythree = \relative c''' {
+  r4 c4(_"piu f" des) ees2( f4)
+  ees2.~( ees2 c4) des2( c4) bes2( des4) c2( aes4) f2.~ f4
 }
 violin-thirtyfour = \relative c'' {
+  f4( g) aes( f c') bes2( aes4) bes2.
+  f'2.~( f2 des4--) c2( f,4--) f'2.~ f4 ees( des)
+  c2.-> bes-> aes-> ges->
 }
 violin-thirtyfive = \relative c'' {
+  \tempo "Piu mosso"
+  f4-> r r R2.*3
+  aes,4\pp_"sotto voce" aes8( g f c)
+  aes'4 aes8( g f des)
+  aes'4 aes8( g f d)
+  aes'2-- f4
+  aes4 aes8( g f c)
+  aes'4 aes8( g f des)
+  aes'4 aes8( g f d)
+  a'2-- f4
 }
 violin-thirtysix = \relative c'' {
+  aes8_"poco marcato" r aes( g aes bes)
+  b8 r b( bes b bes) aes( g aes bes b cis)
+  d8(_"poco a poco cresc." cis d cis b ais)
+  b8 r b( ais b cis) d r d( cis d cis)
+  b8( ais b cis d e) f( e f e d cis)
+  d8( cis d e f g) aes( g aes g f e)
 }
 violin-thirtyseven = \relative c'' {
+  d8( e f e g f) d8( e f e g f)
+  d8\< e f g aes bes\!
+  b8\f r ais, b e g
+  b8-> r ais,( b) e g
+  <b, b'>8-> <e, b'> q\< <g, e'> <e' b'> <b' b'>
+  <b b'>8-> <e, b'> q <g, e'> <e' b'> <b' b'>\!
 }
 violin-thirtyeight = \relative c'' {
+  \key c \major
+  <c c'>8->\ff r e, e <c g'> q
+  <e c'> q <g e'> q <c g'> q
+  c'8-> g e c g e dis( e) g c e g
+  c8-> r e,, e <c a'> q
+  <e c'>8 q <a e'> q <c a'> q
+  c'8-> a e c a e dis e a c e a
 }
-violin-thirtynine = \relative c'' {
+violin-thirtynine = \relative c''' {
+  c8->_"meno f e cresc." aes ees c d ees
+  d8 c b c ees aes
+  c8-> a fis c d ees d c b c fis a
+  c8-> aes f c d ees d c b c f aes
+  c8->\ff g e c g e dis e g c e g
 }
-violin-forty = \relative c'' {
+violin-forty = \relative c''' {
+  c8-> c g g e e c c g g e e c4-> r r R2.*2
+  <g' e' c'>4->\sf r r c,4->\sf r r R2.
 }
 
 violin = \relative c' {
@@ -1274,13 +1548,18 @@ violin = \relative c' {
 
 \score {
   <<
-    \new Staff = "violin-staff" {
+    \new Staff = "violin-staff" \with {
+      fontSize = #-3
+      \override StaffSymbol.staff-space = #(magstep -3)
+      \override StaffSymbol.thickness = #(magstep -3)
+    }
+    <<
       \set Staff.midiInstrument = #"violin"
       \set Staff.instrumentName = #"Violin"
       \set Staff.midiMinimumVolume = #0.5
       \set Staff.midiMaximumVolume = #0.8
       \violin
-    }
+    >>
     \new PianoStaff <<
       \set PianoStaff.instrumentName = #"Piano"
       \new Staff = "right" {
