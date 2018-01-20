@@ -943,7 +943,7 @@ dynamics-twentyone = {
   s2.\mf s2._"poco a poco cresc." s2.*4 s2\< s4\!
 }
 dynamics-twentytwo = {
-  s4\f s2\pp
+  s4\f s2\pp s2.*4 s4 s2_"poco cresc." s2.*6 s2.\sf s2.
 }
 dynamics-twentythree = {
   s4\f s2_"marcato" s2.*11
@@ -998,9 +998,10 @@ dynamics-thirtyseven = {
 dynamics-thirtyeight = {
   s2.\ff s2.\sf s2.\sf s2.
   \repeat unfold 3 { s2.\sf }
+  s2.
 }
 dynamics-thirtynine = {
-  s2.\p_"e cresc." s2.*5 s2.\ff
+  s2.\p_"e cresc." s2.*5 s2.\ff s2.
 }
 dynamics-forty = {
   s2.\sf s2.*4 s2.\sf s2.\sf s2.
