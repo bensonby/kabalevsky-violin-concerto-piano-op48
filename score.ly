@@ -1546,6 +1546,9 @@ violin = \relative c' {
   \bar "|."
 }
 
+\paper {
+  page-breaking = #ly:page-turn-breaking
+}
 \score {
   <<
     \new Staff = "violin-staff" \with {
